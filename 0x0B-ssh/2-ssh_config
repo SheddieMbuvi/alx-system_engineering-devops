@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #configure a server so that you can connect to it
 #without a password
-Host 100.25.132.205
+Host 35.153.194.219
 IdentityFile ~/.ssh/school
 PasswordAuthentication no
 SendEnv LANG LC_*
