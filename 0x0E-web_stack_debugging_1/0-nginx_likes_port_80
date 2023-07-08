@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-sudo install nginx
-sudo vim /etc/nginx/nginx.conf
+#configure nginx to be accescible in port 80
+sudo sed -i "s/sites-enabled/sites-available/" /etc/nginx/nginx.conf
 sudo service nginx restart
