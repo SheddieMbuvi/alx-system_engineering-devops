@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+sudo install nginx
+sudo vim /etc/nginx/nginx.conf
+sudo service nginx restart
