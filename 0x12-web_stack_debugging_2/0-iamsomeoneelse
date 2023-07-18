@@ -3,7 +3,7 @@
 # Accepts arguments
 if [ $# -eq 1 ]
 then
-	sudo -H -u $1 bash -c 'whoami'
+	sudo -H -u "$1" bash -c 'whoami'
 else
 	whoami
 fi
