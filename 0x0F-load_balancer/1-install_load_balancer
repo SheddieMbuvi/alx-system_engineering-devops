@@ -7,5 +7,5 @@ sudo apt-get -y install haproxy=1.8.\*
 sudo service haproxy start
 sed -i "$ a ENABLED=1" /etc/default/haproxy
 sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.original
-sed -i "$ a frontend http\n\tbind *:80\n\tdefault_backend webservers\nbackend webservers\n\tserver 1092-web-01 35.153.194.219:80 check\n\tserver 1092-web-02 52.3.251.220:80 check\n" /etc/haproxy/haproxy.cfg
+sed -i "$ a frontend http\n\tbind *:80\n\tdefault_backend webservers\nbackend webservers\n\tserver 205887-web-01 52.91.135.108:80 check\n\tserver 205887-web-02 100.25.223.51:80 check\n" /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
